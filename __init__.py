@@ -12,12 +12,13 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 bl_info = {
-    "name" : "Make_Corner_End",
+    "name" : "Make Corner End",
     "author" : "Jrome",
     "description" : "Make Corner: Select the vertices that terminates a loop on each adjacent edge for the face, or select an edge that connects the two vertices. \n Make End: Select the vertices or the edge between them that are created when two parellel edge loops terminate at the same side.",
     "blender" : (2, 90, 0),
     "version" : (0, 5, 1),
-    "location" : "",
+    "location" : "Toolbar, Edge Menu",
+    "wiki_url": "https://blenderartists.org/t/make-corner-and-make-end/1273026",
     "warning" : "",
     "category" : "Mesh"
 }
@@ -52,7 +53,7 @@ from . make_end import MCE_OT_MakeEnd
 from . four_to_two import MCE_OT_MakeFourToTwo
 from . five_to_three import MCE_OT_MakeFiveToThree
 from . three_to_two import MCE_OT_MakeThreeToTwo
-from . tools import (Tool_MakeCorner, MCE_GGT_MakeCorner, MCE_GGT_MakeEnd, Tool_MakeEnd, 
+from . tools import (Tool_MakeCorner, MCE_GGT_MakeCorner, MCE_GGT_MakeEnd, Tool_MakeEnd,
                     Tool_FourToTwo, MCE_GGT_FourToTwo, Tool_FiveToThree, MCE_GGT_FiveToThree, Tool_FiveToThreeAlt, MCE_GGT_FiveToThreeAlt,
                     Tool_ThreeToTwo, MCE_GGT_ThreeToTwo)
 
@@ -104,7 +105,7 @@ classes = [ MCE_Preferences,
 
 addon_keymaps = []
 def register():
-    
+
 
     for c in classes:
         bpy.utils.register_class(c)
@@ -128,7 +129,7 @@ def register():
 
     addon_keymaps.append((km, kmi))
 
-    
+
 def unregister():
 
     try:
