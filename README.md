@@ -8,7 +8,7 @@
 
 ## Usage:
 
-![Make Corner End Screenshot](https://github.com/don1138/Make_Corner_End/blob/main/make-corner-end.png)
+![Make Corner End Screenshot](https://github.com/don1138/Make_Corner_End/blob/Make_Corner_End/make-corner-end.png)
 
 * Make a valid selection of vertices or edges for either the Make Corner or the Make End operator.
 * Open the pie-menu with ALT+COMMA
