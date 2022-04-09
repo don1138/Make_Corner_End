@@ -12,13 +12,13 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 bl_info = {
-    "name" : "Make Corner End",
+    "name" : "Make Corner and Make End",
     "author" : "Jrome",
-    "description" : "Make Corner: Select the vertices that terminates a loop on each adjacent edge for the face, or select an edge that connects the two vertices. \n Make End: Select the vertices or the edge between them that are created when two parellel edge loops terminate at the same side.",
+    "description" : "Connect Vertices To Turn Ngons Into Quads",
     "blender" : (2, 90, 0),
     "version" : (0, 5, 1),
-    "location" : "Toolbar, Edge Menu",
-    "wiki_url": "https://blenderartists.org/t/make-corner-and-make-end/1273026",
+    "location" : "Context Menu, Pie Menu (Alt-Comma), Toolbar",
+    "doc_url": "https://blenderartists.org/t/make-corner-and-make-end/1273026",
     "warning" : "",
     "category" : "Mesh"
 }
